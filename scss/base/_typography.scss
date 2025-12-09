@@ -1,2 +1,63 @@
-$font-heading: "Big Shoulders", sans-serif;
-$font-body: "Outfit", sans-serif;
+@use "../abstracts/variables" as var;
+
+$font-heading: "Space Grotesk", sans-serif;
+$font-body:    "Space Grotesk", sans-serif;
+
+$weight-bold: 700;
+$weight-medium: 500;
+
+$fs-body: 1.8rem;   // 18px
+$lh-body: 2.8rem;   // 28px
+
+$fs-h-xl: 8.8rem;   // 88px
+$lh-h-xl: 8.8rem;
+
+$fs-h-l: 4.8rem;    // 48px
+$lh-h-l: 5.6rem;    // 56px
+
+$fs-h-m: 2.4rem;    // 24px
+$lh-h-m: 3.2rem;    // 32px
+
+
+
+
+/* ================================
+   Base Typography
+   ================================ */
+body {
+  font-family: $font-body;
+  font-size: $fs-body;
+  line-height: $lh-body;
+  font-weight: $weight-medium;
+  color: var.$white;
+}
+
+.heading-xl {
+  font-family: $font-heading;
+  font-size: $fs-h-xl;
+  line-height: $lh-h-xl;
+  font-weight: $weight-bold;
+  letter-spacing: -0.25rem;
+}
+
+.heading-l {
+  font-family: $font-heading;
+  font-size: $fs-h-l;
+  line-height: $lh-h-l;
+  font-weight: $weight-bold;
+  letter-spacing: -0.15rem;
+}
+
+.heading-m {
+  font-family: $font-heading;
+  font-size: $fs-h-m;
+  line-height: $lh-h-m;
+  font-weight: $weight-bold;
+}
+
+.text-body {
+  font-family: $font-body;
+  font-size: $fs-body;
+  line-height: $lh-body;
+  font-weight: $weight-medium;
+}
