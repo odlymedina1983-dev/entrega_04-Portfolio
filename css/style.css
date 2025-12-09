@@ -1,0 +1,27 @@
+/* ABSTRACTS (variables mixins)*/
+/*   BASE resets tipografias estilos globales */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/*  LAYOUT  estructura general del sitio*/
+/*    COMPONENTS botones tarjetas etc*/
+/*    PAGES   estilos especificos para cada pagina*/
+/*   THEMES    */
+/*  VENDORS    codigo de terceros*//*# sourceMappingURL=style.css.map */

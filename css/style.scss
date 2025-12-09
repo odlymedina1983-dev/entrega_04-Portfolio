@@ -1,0 +1,35 @@
+/* ABSTRACTS (variables mixins)*/
+@use "../scss/abstracts/variables";
+@use "../scss/abstracts/mixins";
+
+/*   BASE resets tipografias estilos globales */
+@use "../scss/base/reset";
+@use "../scss/base/base";
+@use "../scss/base/typography";
+
+/*  LAYOUT  estructura general del sitio*/
+@use "../scss/layout/header";
+@use "../scss/layout/heroe";
+@use "../scss/layout/guide";
+@use "../scss/layout/location";
+@use "../scss/layout/footer";
+@use "../scss/layout/marketing";
+
+/*    COMPONENTS botones tarjetas etc*/
+@use "../scss/components/buttons";
+@use "../scss/components/art-card";
+@use "../scss/components/forms";
+@use "../scss/components/tags";
+
+/*    PAGES   estilos especificos para cada pagina*/
+@use "../scss/pages/home";
+@use "../scss/pages/about";
+@use "../scss/pages/contact";
+
+/*   THEMES    */
+@use "../scss/themes/dark";
+@use "../scss/themes/light";
+
+/*  VENDORS    codigo de terceros*/
+@use "../scss/vendors/normalize";
+@use "../scss/vendors/bootstrap-overrides";
