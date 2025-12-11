@@ -1,2 +1,101 @@
 @use "../abstracts/mixins" as mx;
 @use "../abstracts/variables" as var;
+
+section.heroe{
+    margin: 0 auto;
+    margin-top: -8rem;
+    overflow-x: hidden;    
+    .heroe--container{
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        margin-left: 3%;
+        margin-right: 3%;
+        &::before{
+            content: "";
+            position: absolute; 
+            top: 60px;
+            left: -520px;
+            width: 200%;
+            aspect-ratio: 400 / 129;                     
+            background-image: url("../../img/icon/oval-pattern.svg");
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            pointer-events: none;
+            z-index: -100; 
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 129px;          // valor base, lo ajustas luego
+            height: 129px;
+            right: -80px;          // sacado un poco fuera
+            bottom: 268px;
+            background-image: url("../../img/icon/Oval-heroe.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            pointer-events: none;
+            z-index: 0;
+        }
+        .heroe--text-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 20px;
+            h2{
+                align-self: center;
+                font-size: 4rem;
+                line-height: 4rem;
+                span{
+                    position: relative;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        bottom: -2px;                
+                        width: 100%;                   
+                        height: 4px;                   
+                        background-color: var.$green;  
+                        border-radius: 5px;           
+                    }
+                }
+            } 
+            a{
+              position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: -8px;                
+                    width: 100%;                   
+                    height: 4px;                   
+                    background-color: var.$green;  
+                    border-radius: 5px; 
+                    padding-bottom: 5px;          
+                }  
+            }
+        }
+    }            
+}
+
+
+
+  /* Mobile moderno (≥375px) */
+  @include mx.mobile {
+    
+  }
+
+  /* Tablet (≥768px) */
+  @include mx.tablet {
+    
+  }
+
+  /* Desktop (≥1440px) */
+  @include mx.desktop {
+    
+  }

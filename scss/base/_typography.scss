@@ -32,7 +32,7 @@ body {
   color: var.$white;
 }
 
-.heading-xl {
+h1 {
   font-family: $font-heading;
   font-size: $fs-h-xl;
   line-height: $lh-h-xl;
@@ -40,7 +40,7 @@ body {
   letter-spacing: -0.25rem;
 }
 
-.heading-l {
+h2 {
   font-family: $font-heading;
   font-size: $fs-h-l;
   line-height: $lh-h-l;
@@ -48,7 +48,7 @@ body {
   letter-spacing: -0.15rem;
 }
 
-.heading-m {
+h3 {
   font-family: $font-heading;
   font-size: $fs-h-m;
   line-height: $lh-h-m;

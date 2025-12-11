@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ABSTRACTS (variables mixins)*/
 /*   BASE resets tipografias estilos globales */
 *, *::before, *::after {
@@ -39,7 +40,7 @@ body {
   color: #fff;
 }
 
-.heading-xl {
+h1 {
   font-family: "Space Grotesk", sans-serif;
   font-size: 8.8rem;
   line-height: 8.8rem;
@@ -47,7 +48,7 @@ body {
   letter-spacing: -0.25rem;
 }
 
-.heading-l {
+h2 {
   font-family: "Space Grotesk", sans-serif;
   font-size: 4.8rem;
   line-height: 5.6rem;
@@ -55,7 +56,7 @@ body {
   letter-spacing: -0.15rem;
 }
 
-.heading-m {
+h3 {
   font-family: "Space Grotesk", sans-serif;
   font-size: 2.4rem;
   line-height: 3.2rem;
@@ -70,6 +71,149 @@ body {
 }
 
 /*  LAYOUT  estructura general del sitio*/
+header {
+  margin: 0 auto;
+}
+header .header--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Mobile moderno (≥375px) */
+/* Tablet (≥768px) */
+/* Desktop (≥1440px) */
+section.heroe {
+  margin: 0 auto;
+  margin-top: -8rem;
+  overflow-x: hidden;
+}
+section.heroe .heroe--container {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+section.heroe .heroe--container::before {
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: -520px;
+  width: 200%;
+  aspect-ratio: 400/129;
+  background-image: url("../../img/icon/oval-pattern.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  pointer-events: none;
+  z-index: -100;
+}
+section.heroe .heroe--container::after {
+  content: "";
+  position: absolute;
+  width: 129px;
+  height: 129px;
+  right: -80px;
+  bottom: 268px;
+  background-image: url("../../img/icon/Oval-heroe.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+  z-index: 0;
+}
+section.heroe .heroe--container .heroe--text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+}
+section.heroe .heroe--container .heroe--text-container h2 {
+  align-self: center;
+  font-size: 4rem;
+  line-height: 4rem;
+}
+section.heroe .heroe--container .heroe--text-container h2 span {
+  position: relative;
+}
+section.heroe .heroe--container .heroe--text-container h2 span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 4px;
+  background-color: #4EE1A0;
+  border-radius: 5px;
+}
+section.heroe .heroe--container .heroe--text-container a {
+  position: relative;
+}
+section.heroe .heroe--container .heroe--text-container a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 100%;
+  height: 4px;
+  background-color: #4EE1A0;
+  border-radius: 5px;
+  padding-bottom: 5px;
+}
+
+/* Mobile moderno (≥375px) */
+/* Tablet (≥768px) */
+/* Desktop (≥1440px) */
+section.skills {
+  margin: 0 auto;
+}
+section.skills .skills--limit {
+  width: 90%;
+  height: 1px;
+  align-self: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  margin-top: 70px;
+  opacity: 50%;
+}
+section.skills .skills--container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+section.skills .skills--container::before {
+  content: "";
+  position: absolute;
+  top: 500px;
+  left: 200px;
+  width: 200%;
+  aspect-ratio: 400/129;
+  background-image: url("../../img/icon/oval-pattern.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  pointer-events: none;
+  z-index: -100;
+}
+section.skills .skills--container .skills--unit {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Mobile moderno (≥375px) */
+/* Tablet (≥768px) */
+/* Desktop (≥1440px) */
 /*    COMPONENTS botones tarjetas etc*/
 /*    PAGES   estilos especificos para cada pagina*/
 /*   THEMES    */
