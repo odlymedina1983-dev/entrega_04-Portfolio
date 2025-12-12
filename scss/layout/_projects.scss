@@ -1,0 +1,123 @@
+@use "../abstracts/mixins" as mx;
+@use "../abstracts/variables" as var;
+
+section.projects{
+    margin: 0 auto;
+    margin-top: 80px;
+    .projects--container{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+        .projects--header{
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;            
+            h2{
+                font-size: 4rem;
+                font-weight: 600;
+            }
+            a{
+                position: relative;
+                span{
+                    text-transform: uppercase;
+                    font-size: 1.5rem;
+                    letter-spacing: 2px;
+                    font-weight: 200;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        bottom: -2px;                
+                        width: 100%;                   
+                        height: 2px;                   
+                        background-color: var.$green;  
+                        border-radius: 5px;           
+                    }
+                }
+            }
+        }
+        article.projects--card{
+            position: relative;
+            outline: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            &:focus-within{
+                .projects--img img{
+                    opacity: 0.3;
+                }
+                .skills--a-container{
+                    position: absolute;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 50px; 
+                    bottom: 150px;   
+                    left: 100px;
+                    a:hover{
+                        color: var.$green;
+                    }                    
+                                    
+                }
+            }
+            .projects--img{
+               transition: opacity .3s ease; 
+            }
+            h3{
+                font-weight: 400;
+                text-transform: uppercase;
+                font-size: 1.8rem;
+            }
+            p{
+                font-weight: 300;
+                font-size: 1.5rem;
+            }
+            .skills--a-container{
+                margin-top: 10px;
+                display: flex;
+                gap: 30px;
+                align-items: center;
+                justify-content: flex-start;
+                a{
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    font-weight: 200;
+                    font-size: 1.4rem;
+                    span{
+                        position: relative;
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            background-color: var.$green;
+                            height: 2px;
+                            width: 100%;
+                            border-radius: 5px;
+                            bottom: -2px;
+                            left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+/* Mobile moderno (≥375px) */
+  @include mx.mobile {
+    
+  }
+
+  /* Tablet (≥768px) */
+  @include mx.tablet {
+    
+  }
+
+  /* Desktop (≥1440px) */
+  @include mx.desktop {
+    
+  }
