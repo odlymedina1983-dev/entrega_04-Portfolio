@@ -78,8 +78,13 @@ header .header--container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   gap: 20px;
   margin-top: 20px;
+}
+header .header--container .header--svg-container {
+  display: flex;
+  gap: 20px;
 }
 
 /* Mobile moderno (≥375px) */
@@ -173,6 +178,7 @@ section.heroe .heroe--container .heroe--text-container a::after {
 section.projects {
   margin: 0 auto;
   margin-top: 80px;
+  margin-bottom: 80px;
 }
 section.projects .projects--container {
   display: flex;
@@ -204,7 +210,7 @@ section.projects .projects--container .projects--header a span::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -2px;
+  bottom: -8px;
   width: 100%;
   height: 2px;
   background-color: #4EE1A0;
@@ -266,7 +272,7 @@ section.projects .projects--container article.projects--card .skills--a-containe
   height: 2px;
   width: 100%;
   border-radius: 5px;
-  bottom: -2px;
+  bottom: -12px;
   left: 0;
 }
 
@@ -312,6 +318,185 @@ section.skills .skills--container .skills--unit {
   gap: 2px;
   align-items: center;
   justify-content: center;
+}
+
+/* Mobile moderno (≥375px) */
+/* Tablet (≥768px) */
+/* Desktop (≥1440px) */
+section.contact {
+  margin: 0 auto;
+  background-color: #242424;
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+section.contact .contact--limit {
+  align-self: center;
+  width: 90% !important;
+  height: 1px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  margin-top: 70px;
+  opacity: 50%;
+}
+section.contact .contact--container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+}
+section.contact .contact--container::before {
+  content: "";
+  position: absolute;
+  top: 465px;
+  left: -250px;
+  width: 110%;
+  height: 140%;
+  aspect-ratio: 500/200;
+  background-image: url("../../img/icon/oval-pattern.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  pointer-events: none;
+  z-index: -1;
+}
+section.contact .contact--container .contact--header {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+section.contact .contact--container .contact--header h3 {
+  font-size: 3rem;
+}
+section.contact .contact--container .contact--header p {
+  font-size: 1.6rem;
+  font-weight: 300;
+  text-align: center;
+  padding: 20px;
+}
+section.contact .contact--container .contact--form-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section.contact .contact--container .contact--form-container a {
+  align-self: flex-end;
+  padding-right: 5%;
+  margin-top: 40px;
+}
+section.contact .contact--container .contact--form-container a:hover {
+  color: #4EE1A0;
+}
+section.contact .contact--container .contact--form-container a span {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-weight: 200;
+}
+section.contact .contact--container .contact--form-container a span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  width: 100%;
+  height: 2px;
+  background-color: #4EE1A0;
+  border-radius: 5px;
+}
+section.contact .contact--container .contact--form-container .contact--form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+  width: 90%;
+}
+section.contact .contact--container .contact--form-container .contact--form .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+section.contact .contact--container .contact--form-container .contact--form input {
+  font-size: 1.6rem;
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  color: inherit;
+  font: inherit;
+  border-bottom: 1px solid #d9d9d9;
+  height: 6rem;
+  width: 100%;
+  padding-left: 20px;
+}
+section.contact .contact--container .contact--form-container .contact--form input:hover {
+  border-bottom-color: #4EE1A0;
+}
+section.contact .contact--container .contact--form-container .contact--form .field {
+  position: relative;
+}
+section.contact .contact--container .contact--form-container .contact--form .field .icon--error {
+  display: none;
+}
+section.contact .contact--container .contact--form-container .contact--form .field .error--message {
+  display: none;
+}
+section.contact .contact--container .contact--form-container .contact--form .field #email:not(:-moz-placeholder):invalid {
+  border-bottom-color: #FF6F5B;
+}
+section.contact .contact--container .contact--form-container .contact--form .field #email:not(:placeholder-shown):invalid {
+  border-bottom-color: #FF6F5B;
+}
+section.contact .contact--container .contact--form-container .contact--form .field #email:not(:-moz-placeholder):invalid ~ .icon--error {
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: 5px;
+}
+section.contact .contact--container .contact--form-container .contact--form .field #email:not(:placeholder-shown):invalid ~ .icon--error {
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: 5px;
+}
+section.contact .contact--container .contact--form-container .contact--form .field #email:not(:-moz-placeholder):invalid ~ .error--message {
+  display: block;
+  position: absolute;
+  top: 65px;
+  right: 5px;
+  font-size: 1.2rem;
+  color: #FF6F5B;
+}
+section.contact .contact--container .contact--form-container .contact--form .field #email:not(:placeholder-shown):invalid ~ .error--message {
+  display: block;
+  position: absolute;
+  top: 65px;
+  right: 5px;
+  font-size: 1.2rem;
+  color: #FF6F5B;
+}
+section.contact .contact--container .contact--form-container .contact--form textarea {
+  font-size: 1.6rem;
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  color: inherit;
+  font: inherit;
+  border-bottom: 1px solid #fff;
+  height: 6rem;
+  width: 100%;
+  padding-left: 20px;
+  resize: none;
+  min-height: 100px;
+}
+section.contact .contact--container .contact--form-container .contact--form textarea:hover {
+  border-bottom-color: #4EE1A0;
 }
 
 /* Mobile moderno (≥375px) */

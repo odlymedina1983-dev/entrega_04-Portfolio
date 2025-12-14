@@ -13,7 +13,7 @@
 @use "../scss/layout/projects";
 @use "../scss/layout/skills";
 @use "../scss/layout/footer";
-@use "../scss/layout/marketing";
+@use "../scss/layout/contact";
 
 /*    COMPONENTS botones tarjetas etc*/
 @use "../scss/components/buttons";
@@ -24,7 +24,7 @@
 /*    PAGES   estilos especificos para cada pagina*/
 @use "../scss/pages/home";
 @use "../scss/pages/about";
-@use "../scss/pages/contact";
+//@use "../scss/pages/contact";
 
 /*   THEMES    */
 @use "../scss/themes/dark";

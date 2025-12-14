@@ -1,0 +1,178 @@
+@use "../abstracts/mixins" as mx;
+@use "../abstracts/variables" as var;
+
+section.contact{
+    margin: 0 auto;
+    background-color: var.$gray-dark;
+    padding-bottom: 50px;
+    overflow: hidden;
+    .contact--limit{
+            align-self: center;
+            width: 90% !important;
+            height: 1px;            
+            margin: 0 auto;
+            margin-bottom: 50px;
+            margin-top: 70px;
+            opacity: 50%;        
+        }
+    .contact--container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 0;
+        &::before{
+            content: "";
+            position: absolute; 
+            top: 465px;
+            left: -250px;
+            width: 110%;
+            height: 140%;
+            aspect-ratio: 500 / 200;                     
+            background-image: url("../../img/icon/oval-pattern.svg");
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            pointer-events: none;
+            z-index: -1;
+        }       
+        .contact--header{
+            margin-top: 80px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            h3{
+                font-size: 3rem;
+            }
+            p{
+                font-size: 1.6rem;
+                font-weight: 300;
+                text-align: center;                
+                padding: 20px;
+            }
+        }
+        .contact--form-container{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            a{
+                align-self: flex-end;
+                padding-right: 5%;
+                margin-top: 40px;
+                &:hover{
+                    color: var.$green;
+                }
+                span{
+                    position: relative;
+                    text-transform: uppercase;
+                    font-size: 1.5rem;
+                    letter-spacing: 2px;
+                    font-weight: 200;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        bottom: -15px;                
+                        width: 100%;                   
+                        height: 2px;                   
+                        background-color: var.$green;  
+                        border-radius: 5px;           
+                    }
+                }
+            }
+            .contact--form{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                margin-top: 20px;
+                width: 90%;
+                .sr-only{
+                    position: absolute;
+                    width: 1px;
+                    height: 1px;
+                    overflow: hidden;
+                    clip: rect(0, 0, 0, 0);                                
+                }
+                input{
+                    font-size: 1.6rem;
+                    background: none;
+                    border: none;
+                    outline: none;
+                    box-shadow: none;
+                    color: inherit;
+                    font: inherit;
+                    border-bottom: 1px solid var.$gray-medium;
+                    height: 6rem;
+                    width: 100%; 
+                    padding-left: 20px;
+                    &:hover{
+                        border-bottom-color: var.$green;
+                    }                   
+                }
+                .field{
+                    position: relative;
+                    .icon--error{
+                        display: none;
+                    }
+                    .error--message{
+                        display: none;
+                    }
+                    #email:not(:placeholder-shown):invalid{
+                        border-bottom-color: var.$error;                        
+                    }
+                    #email:not(:placeholder-shown):invalid ~ .icon--error{
+                        display: block;
+                        position: absolute; 
+                        top: 15px;
+                        right: 5px;                      
+                    }
+                    #email:not(:placeholder-shown):invalid ~ .error--message{
+                        display: block; 
+                        position: absolute; 
+                        top: 65px;
+                        right: 5px;
+                        font-size: 1.2rem; 
+                        color: var.$error;                    
+                    }
+                }
+                
+                textarea{
+                    font-size: 1.6rem;
+                    background: none;
+                    border: none;
+                    outline: none;
+                    box-shadow: none;
+                    color: inherit;
+                    font: inherit;
+                    border-bottom: 1px solid var.$white;
+                    height: 6rem;
+                    width: 100%; 
+                    padding-left: 20px;
+                    resize: none;
+                    min-height: 100px;
+                    &:hover{
+                        border-bottom-color: var.$green;
+                    } 
+                }
+            }
+        }
+    }
+}
+
+
+/* Mobile moderno (≥375px) */
+  @include mx.mobile {
+    
+  }
+
+  /* Tablet (≥768px) */
+  @include mx.tablet {
+    
+  }
+
+  /* Desktop (≥1440px) */
+  @include mx.desktop {
+    
+  }

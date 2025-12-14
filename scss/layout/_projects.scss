@@ -4,6 +4,7 @@
 section.projects{
     margin: 0 auto;
     margin-top: 80px;
+    margin-bottom: 80px;
     .projects--container{
         display: flex;
         flex-direction: column;
@@ -30,7 +31,7 @@ section.projects{
                         content: "";
                         position: absolute;
                         left: 0;
-                        bottom: -2px;                
+                        bottom: -8px;                
                         width: 100%;                   
                         height: 2px;                   
                         background-color: var.$green;  
@@ -94,7 +95,7 @@ section.projects{
                             height: 2px;
                             width: 100%;
                             border-radius: 5px;
-                            bottom: -2px;
+                            bottom: -12px;
                             left: 0;
                         }
                     }
