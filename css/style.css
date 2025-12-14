@@ -71,9 +71,6 @@ h3 {
 }
 
 /*  LAYOUT  estructura general del sitio*/
-header {
-  margin: 0 auto;
-}
 header .header--container {
   display: flex;
   flex-direction: column;
@@ -87,13 +84,13 @@ header .header--container .header--svg-container {
   gap: 20px;
 }
 
-/* Mobile moderno (≥375px) */
 /* Tablet (≥768px) */
 /* Desktop (≥1440px) */
 section.heroe {
-  margin: 0 auto;
   margin-top: -8rem;
   overflow-x: hidden;
+  /* Tablet (≥768px) */
+  /* Desktop (≥1440px) */
 }
 section.heroe .heroe--container {
   position: relative;
@@ -171,14 +168,11 @@ section.heroe .heroe--container .heroe--text-container a::after {
   border-radius: 5px;
   padding-bottom: 5px;
 }
-
-/* Mobile moderno (≥375px) */
-/* Tablet (≥768px) */
-/* Desktop (≥1440px) */
 section.projects {
-  margin: 0 auto;
   margin-top: 80px;
   margin-bottom: 80px;
+  /* Tablet (≥768px) */
+  /* Desktop (≥1440px) */
 }
 section.projects .projects--container {
   display: flex;
@@ -275,12 +269,9 @@ section.projects .projects--container article.projects--card .skills--a-containe
   bottom: -12px;
   left: 0;
 }
-
-/* Mobile moderno (≥375px) */
-/* Tablet (≥768px) */
-/* Desktop (≥1440px) */
 section.skills {
-  margin: 0 auto;
+  /* Tablet (≥768px) */
+  /* Desktop (≥1440px) */
 }
 section.skills .skills--limit {
   width: 90%;
@@ -319,15 +310,12 @@ section.skills .skills--container .skills--unit {
   align-items: center;
   justify-content: center;
 }
-
-/* Mobile moderno (≥375px) */
-/* Tablet (≥768px) */
-/* Desktop (≥1440px) */
 footer {
-  margin: 0 auto;
   background-color: #242424;
   margin-top: 0;
   padding-bottom: 50px;
+  /* Tablet (≥768px) */
+  /* Desktop (≥1440px) */
 }
 footer .footer--container {
   display: flex;
@@ -340,15 +328,13 @@ footer .footer--container .footer--svg-container {
   display: flex;
   gap: 20px;
 }
-
-/* Mobile moderno (≥375px) */
-/* Tablet (≥768px) */
-/* Desktop (≥1440px) */
 section.contact {
   margin: 0 auto;
   background-color: #242424;
   padding-bottom: 10px;
   overflow: hidden;
+  /* Tablet (≥768px) */
+  /* Desktop (≥1440px) */
 }
 section.contact .contact--limit {
   align-self: center;
@@ -519,10 +505,6 @@ section.contact .contact--container .contact--form-container .contact--form text
 section.contact .contact--container .contact--form-container .contact--form textarea:hover {
   border-bottom-color: #4EE1A0;
 }
-
-/* Mobile moderno (≥375px) */
-/* Tablet (≥768px) */
-/* Desktop (≥1440px) */
 /*    COMPONENTS botones tarjetas etc*/
 /*    PAGES   estilos especificos para cada pagina*/
 /*   THEMES    */

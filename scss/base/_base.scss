@@ -3,3 +3,19 @@
 body {
   background-color: var.$black; 
 }
+.container{
+  width: 100%;
+  margin-inline: auto;     // centra cuando haya max-width
+  padding-inline: 16px;    
+
+  @include mx.tablet{
+    max-width: 768px;      
+    padding-inline: 32px;
+  }
+
+  @include mx.desktop{
+    max-width: 14400px;     
+    padding-inline: 0;     
+  }
+
+}

@@ -1,8 +1,7 @@
 @use "../abstracts/mixins" as mx;
 @use "../abstracts/variables" as var;
 
-section.projects{
-    margin: 0 auto;
+section.projects{    
     margin-top: 80px;
     margin-bottom: 80px;
     .projects--container{
@@ -103,15 +102,6 @@ section.projects{
             }
         }
     }
-}
-
-
-
-
-/* Mobile moderno (≥375px) */
-  @include mx.mobile {
-    
-  }
 
   /* Tablet (≥768px) */
   @include mx.tablet {
@@ -122,3 +112,9 @@ section.projects{
   @include mx.desktop {
     
   }
+
+}
+
+
+
+

@@ -1,8 +1,7 @@
 @use "../abstracts/mixins" as mx;
 @use "../abstracts/variables" as var;
 
-section.heroe{
-    margin: 0 auto;
+section.heroe{    
     margin-top: -8rem;
     overflow-x: hidden;    
     .heroe--container{
@@ -80,15 +79,8 @@ section.heroe{
                 }  
             }
         }
-    }            
-}
+    } 
 
-
-
-  /* Mobile moderno (≥375px) */
-  @include mx.mobile {
-    
-  }
 
   /* Tablet (≥768px) */
   @include mx.tablet {
@@ -99,3 +91,6 @@ section.heroe{
   @include mx.desktop {
     
   }
+}
+
+

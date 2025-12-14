@@ -1,8 +1,7 @@
 @use "../abstracts/mixins" as mx;
 @use "../abstracts/variables" as var;
 
-section.contact{
-    margin: 0 auto;
+section.contact{    
     background-color: var.$gray-dark;
     padding-bottom: 10px;
     overflow: hidden;
@@ -159,14 +158,6 @@ section.contact{
             }
         }
     }
-}
-
-
-/* Mobile moderno (≥375px) */
-  @include mx.mobile {
-    
-  }
-
   /* Tablet (≥768px) */
   @include mx.tablet {
     
@@ -176,3 +167,6 @@ section.contact{
   @include mx.desktop {
     
   }
+    
+}
+

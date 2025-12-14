@@ -1,8 +1,7 @@
 @use "../abstracts/mixins" as mx;
 @use "../abstracts/variables" as var;
 
-section.skills{
-    margin: 0 auto;    
+section.skills{       
     .skills--limit{
         width: 90%;
         height: 1px;
@@ -40,15 +39,6 @@ section.skills{
             justify-content: center;
         }               
     }
-}
-
-
-
-
-/* Mobile moderno (≥375px) */
-  @include mx.mobile {
-    
-  }
 
   /* Tablet (≥768px) */
   @include mx.tablet {
@@ -59,3 +49,7 @@ section.skills{
   @include mx.desktop {
     
   }
+}
+
+
+

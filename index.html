@@ -29,14 +29,14 @@
 
   <div class="body-wrapper">
     <header>
-      <div class="header--container">
+      <div class="header--container container">
         <picture class="header--logo">
-              <!-- 2) Luego tablet -->
-              <source srcset="img/tablet/adamkeyes_logo-tablet.png" media="(min-width: 768px)">
-              <!-- 3) Por último desktop -->
+              <!-- 3) desktop -->
               <source srcset="img/desktop/adamkeyes_logo-desktop.png" media="(min-width: 1440px)">
+              <!-- 2) Luego tablet -->
+              <source srcset="img/tablet/adamkeyes_logo-tablet.png" media="(min-width: 768px)">              
               <!-- Fallback por si algo falla -->
-              <img src="img/mobile/adamkeyes_logo-mobile.png" alt="heroe-logo" class="heroe--img">
+              <img src="img/mobile/adamkeyes_logo-mobile.png" alt="heroe-logo" class="header--img">
         </picture>
         <div class="header--svg-container">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.84282 0C4.40466 0 0 4.40466 0 9.84282C0 14.1983 2.81751 17.877 6.73003 19.1812C7.22217 19.2673 7.40672 18.972 7.40672 18.7137C7.40672 18.4799 7.39442 17.7048 7.39442 16.8804C4.92141 17.3357 4.28163 16.2776 4.08477 15.7239C3.97404 15.4409 3.4942 14.5674 3.07588 14.3336C2.73138 14.1491 2.23924 13.6938 3.06358 13.6815C3.8387 13.6692 4.39236 14.3951 4.57691 14.6904C5.46277 16.1791 6.87767 15.7608 7.44363 15.5024C7.52976 14.8627 7.78813 14.432 8.07111 14.186C5.88109 13.9399 3.59263 13.091 3.59263 9.32607C3.59263 8.25567 3.97404 7.36981 4.60152 6.68081C4.50309 6.43474 4.15859 5.42586 4.69995 4.07247C4.69995 4.07247 5.52428 3.81409 7.40672 5.08136C8.19415 4.85989 9.03079 4.74916 9.86743 4.74916C10.7041 4.74916 11.5407 4.85989 12.3281 5.08136C14.2106 3.80179 15.0349 4.07247 15.0349 4.07247C15.5763 5.42586 15.2318 6.43474 15.1333 6.68081C15.7608 7.36981 16.1422 8.24336 16.1422 9.32607C16.1422 13.1033 13.8415 13.9399 11.6514 14.186C12.0082 14.4936 12.3158 15.0841 12.3158 16.0069C12.3158 17.3234 12.3035 18.3815 12.3035 18.7137C12.3035 18.972 12.4881 19.2796 12.9802 19.1812C14.9341 18.5215 16.632 17.2657 17.8349 15.5905C19.0378 13.9153 19.6851 11.9051 19.6856 9.84282C19.6856 4.40466 15.281 0 9.84282 0Z" fill="white"/></svg>
@@ -48,7 +48,7 @@
     </header>
 
     <section class="heroe">
-      <div class="heroe--container">
+      <div class="heroe--container container">
         <div class="heroe--text-container">          
           <h2>
             Nice to meet you! I’m <span>Adam Keyes</span>.
@@ -60,10 +60,10 @@
         </div>
         <div class="heroe--avatar-container">
           <picture class="heroe--avatar">
-              <!-- 2) Luego tablet -->
-              <source srcset="img/tablet/avatar-tablet.png" media="(min-width: 768px)">
-              <!-- 3) Por último desktop -->
+              <!-- 3) desktop -->
               <source srcset="img/desktop/avatar-desktop.png" media="(min-width: 1440px)">
+              <!-- 2) Luego tablet -->
+              <source srcset="img/tablet/avatar-tablet.png" media="(min-width: 768px)">              
               <!-- Fallback por si algo falla -->
               <img src="img/mobile/avatar-mobile.png" alt="heroe-logo" class="heroe--img">
         </picture>
@@ -73,7 +73,7 @@
     <main>
       <section class="skills">
         <hr class="skills--limit">
-        <div class="skills--container">          
+        <div class="skills--container container">          
             
               <div class="skills--unit">
                 <h3>HTML</h3>
@@ -103,18 +103,19 @@
         </div>
         <hr class="skills--limit">
       </section>
+
       <section class="projects">
-        <div class="projects--container">
+        <div class="projects--container container">
           <header class="projects--header">
             <h2>Projects</h2>
             <a href="#"><span>contact me</span></a>
           </header>
           <article tabindex="0" class="projects--card">
             <picture class="projects--img">
-              <!-- 2) Luego tablet -->
-              <source srcset="img/tablet/proyects1-tablet.jpg" media="(min-width: 768px)">
-              <!-- 3) Por último desktop -->
+              <!-- 3) desktop -->
               <source srcset="img/desktop/proyectos1-desktop.jpg" media="(min-width: 1440px)">
+              <!-- 2) Luego tablet -->
+              <source srcset="img/tablet/proyects1-tablet.jpg" media="(min-width: 768px)">              
               <!-- Fallback por si algo falla -->
               <img src="img/mobile/proyects1-mobile.jpg" alt="heroe-logo" class="pro--img">
             </picture>
@@ -127,10 +128,10 @@
           </article>
           <article tabindex="0" class="projects--card">
             <picture class="projects--img">
-              <!-- 2) Luego tablet -->
-              <source srcset="img/tablet/proyects2-tablet.jpg" media="(min-width: 768px)">
-              <!-- 3) Por último desktop -->
+              <!-- 3) desktop -->
               <source srcset="img/desktop/proyectos2-desktop.jpg" media="(min-width: 1440px)">
+              <!-- 2) Luego tablet -->
+              <source srcset="img/tablet/proyects2-tablet.jpg" media="(min-width: 768px)">              
               <!-- Fallback por si algo falla -->
               <img src="img/mobile/proyects2-mobile.jpg" alt="heroe-logo" class="pro--img">
             </picture>
@@ -143,10 +144,10 @@
           </article>
           <article tabindex="0" class="projects--card">
             <picture class="projects--img">
-              <!-- 2) Luego tablet -->
-              <source srcset="img/tablet/proyects3-tablet.jpg" media="(min-width: 768px)">
-              <!-- 3) Por último desktop -->
+              <!-- 3) desktop -->
               <source srcset="img/desktop/proyectos3-desktop.jpg" media="(min-width: 1440px)">
+              <!-- 2) Luego tablet -->
+              <source srcset="img/tablet/proyects3-tablet.jpg" media="(min-width: 768px)">              
               <!-- Fallback por si algo falla -->
               <img src="img/mobile/proyects3-mobile.jpg" alt="heroe-logo" class="pro--img">
             </picture>
@@ -159,10 +160,10 @@
           </article>
           <article tabindex="0" class="projects--card">
             <picture class="projects--img">
-              <!-- 2) Luego tablet -->
-              <source srcset="img/tablet/proyects4-tablet.jpg" media="(min-width: 768px)">
-              <!-- 3) Por último desktop -->
+              <!-- 3) desktop -->
               <source srcset="img/desktop/proyectos4-desktop.jpg" media="(min-width: 1440px)">
+              <!-- 2) Luego tablet -->
+              <source srcset="img/tablet/proyects4-tablet.jpg" media="(min-width: 768px)">              
               <!-- Fallback por si algo falla -->
               <img src="img/mobile/proyects4-mobile.jpg" alt="heroe-logo" class="pro--img">
             </picture>
@@ -175,10 +176,10 @@
           </article>
           <article tabindex="0" class="projects--card">
             <picture class="projects--img">
-              <!-- 2) Luego tablet -->
-              <source srcset="img/tablet/proyects5-tablet.jpg" media="(min-width: 768px)">
-              <!-- 3) Por último desktop -->
+              <!-- 3) desktop -->
               <source srcset="img/desktop/proyectos5-desktop.jpg" media="(min-width: 1440px)">
+              <!-- 2) Luego tablet -->
+              <source srcset="img/tablet/proyects5-tablet.jpg" media="(min-width: 768px)">              
               <!-- Fallback por si algo falla -->
               <img src="img/mobile/proyects5-mobile.jpg" alt="heroe-logo" class="pro--img">
             </picture>
@@ -191,10 +192,10 @@
           </article>
           <article tabindex="0" class="projects--card">
             <picture class="projects--img">
-              <!-- 2) Luego tablet -->
-              <source srcset="img/tablet/proyects6-tablet.jpg" media="(min-width: 768px)">
-              <!-- 3) Por último desktop -->
+              <!-- 3) desktop -->
               <source srcset="img/desktop/proyectos6-desktop.jpg" media="(min-width: 1440px)">
+              <!-- 2) Luego tablet -->
+              <source srcset="img/tablet/proyects6-tablet.jpg" media="(min-width: 768px)">              
               <!-- Fallback por si algo falla -->
               <img src="img/mobile/proyects6-mobile.jpg" alt="heroe-logo" class="pro--img">
             </picture>
@@ -207,8 +208,9 @@
           </article>
         </div>
       </section>
+
       <section class="contact">
-        <div class="contact--container">
+        <div class="contact--container container">
           <header class="contact--header">
             <h3>Contact</h3>
             <p>I would love to hear about your project and 
@@ -242,17 +244,18 @@
         </div>
         <hr class="contact--limit">
       </section>
+
     </main>
 
     <footer>
-      <div class="footer--container">
+      <div class="footer--container container">
         <picture class="footer--logo">
-              <!-- 2) Luego tablet -->
-              <source srcset="img/tablet/adamkeyes_logo-tablet.png" media="(min-width: 768px)">
-              <!-- 3) Por último desktop -->
-              <source srcset="img/desktop/adamkeyes_logo-desktop.png" media="(min-width: 1440px)">
-              <!-- Fallback por si algo falla -->
-              <img src="img/mobile/adamkeyes_logo-mobile.png" alt="footer-logo" class="heroe--img">
+          <!-- 3) desktop -->
+          <source srcset="img/desktop/adamkeyes_logo-desktop.png" media="(min-width: 1440px)">  
+          <!-- 2) Luego tablet -->
+          <source srcset="img/tablet/adamkeyes_logo-tablet.png" media="(min-width: 768px)">              
+          <!-- Fallback por si algo falla -->
+          <img src="img/mobile/adamkeyes_logo-mobile.png" alt="footer-logo" class="footer--img">
         </picture>
         <div class="footer--svg-container">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.84282 0C4.40466 0 0 4.40466 0 9.84282C0 14.1983 2.81751 17.877 6.73003 19.1812C7.22217 19.2673 7.40672 18.972 7.40672 18.7137C7.40672 18.4799 7.39442 17.7048 7.39442 16.8804C4.92141 17.3357 4.28163 16.2776 4.08477 15.7239C3.97404 15.4409 3.4942 14.5674 3.07588 14.3336C2.73138 14.1491 2.23924 13.6938 3.06358 13.6815C3.8387 13.6692 4.39236 14.3951 4.57691 14.6904C5.46277 16.1791 6.87767 15.7608 7.44363 15.5024C7.52976 14.8627 7.78813 14.432 8.07111 14.186C5.88109 13.9399 3.59263 13.091 3.59263 9.32607C3.59263 8.25567 3.97404 7.36981 4.60152 6.68081C4.50309 6.43474 4.15859 5.42586 4.69995 4.07247C4.69995 4.07247 5.52428 3.81409 7.40672 5.08136C8.19415 4.85989 9.03079 4.74916 9.86743 4.74916C10.7041 4.74916 11.5407 4.85989 12.3281 5.08136C14.2106 3.80179 15.0349 4.07247 15.0349 4.07247C15.5763 5.42586 15.2318 6.43474 15.1333 6.68081C15.7608 7.36981 16.1422 8.24336 16.1422 9.32607C16.1422 13.1033 13.8415 13.9399 11.6514 14.186C12.0082 14.4936 12.3158 15.0841 12.3158 16.0069C12.3158 17.3234 12.3035 18.3815 12.3035 18.7137C12.3035 18.972 12.4881 19.2796 12.9802 19.1812C14.9341 18.5215 16.632 17.2657 17.8349 15.5905C19.0378 13.9153 19.6851 11.9051 19.6856 9.84282C19.6856 4.40466 15.281 0 9.84282 0Z" fill="white"/></svg>
