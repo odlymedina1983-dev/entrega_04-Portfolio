@@ -19,7 +19,15 @@ footer{
 
   /* Tablet (≥768px) */
   @include mx.tablet {
-    
+    padding-bottom: 30px;
+    .footer--container{
+        display: flex;
+        flex-direction: row;        
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        width: 90%;
+    }
   }
 
   /* Desktop (≥1440px) */

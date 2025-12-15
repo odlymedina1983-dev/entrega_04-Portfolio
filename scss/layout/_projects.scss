@@ -105,6 +105,18 @@ section.projects{
 
   /* Tablet (≥768px) */
   @include mx.tablet {
+    .projects--container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+        .projects--header{
+            width: 90%;
+        }
+    }
+
     
   }
 

@@ -160,7 +160,27 @@ section.contact{
     }
   /* Tablet (≥768px) */
   @include mx.tablet {
-    
+    .contact--container{
+        max-width: 75%;
+        &::before{
+            content: "";
+            position: absolute; 
+            top: 430px;
+            left: -620px;
+            width: 110%;
+            height: 140%;
+            aspect-ratio: 500 / 200;                     
+            background-image: url("../../img/icon/oval-pattern.svg");
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            pointer-events: none;
+            z-index: -1;
+        }
+    }
+    .contact--limit{
+        margin-bottom: 30px;
+        margin-top: 120px;
+    }
   }
 
   /* Desktop (≥1440px) */

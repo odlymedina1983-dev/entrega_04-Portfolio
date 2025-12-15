@@ -390,6 +390,19 @@ section.projects .projects--container article.projects--card .skills--a-containe
   bottom: -12px;
   left: 0;
 }
+@media (min-width: 768px) {
+  section.projects .projects--container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+  section.projects .projects--container .projects--header {
+    width: 90%;
+  }
+}
 section.skills {
   /* Tablet (≥768px) */
   /* Desktop (≥1440px) */
@@ -485,6 +498,19 @@ footer .footer--container {
 footer .footer--container .footer--svg-container {
   display: flex;
   gap: 20px;
+}
+@media (min-width: 768px) {
+  footer {
+    padding-bottom: 30px;
+  }
+  footer .footer--container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 90%;
+  }
 }
 section.contact {
   background-color: #242424;
@@ -661,6 +687,29 @@ section.contact .contact--container .contact--form-container .contact--form text
 }
 section.contact .contact--container .contact--form-container .contact--form textarea:hover {
   border-bottom-color: #4EE1A0;
+}
+@media (min-width: 768px) {
+  section.contact .contact--container {
+    max-width: 75%;
+  }
+  section.contact .contact--container::before {
+    content: "";
+    position: absolute;
+    top: 430px;
+    left: -620px;
+    width: 110%;
+    height: 140%;
+    aspect-ratio: 500/200;
+    background-image: url("../../img/icon/oval-pattern.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    pointer-events: none;
+    z-index: -1;
+  }
+  section.contact .contact--limit {
+    margin-bottom: 30px;
+    margin-top: 120px;
+  }
 }
 /*    COMPONENTS botones tarjetas etc*/
 /*    PAGES   estilos especificos para cada pagina*/
