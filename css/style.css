@@ -42,6 +42,8 @@ body {
 @media (min-width: 1440px) {
   .container {
     padding-inline: 0;
+    max-width: 1440px;
+    margin: 5% auto;
   }
 }
 
@@ -124,6 +126,19 @@ header .header--container .header--svg-container {
     justify-content: flex-start;
   }
 }
+@media (min-width: 1440px) {
+  header .header--container {
+    margin-inline: 8%;
+    width: 100%;
+  }
+  header .header--container .header--svg-container {
+    position: relative;
+    right: 100px;
+    justify-self: flex-end;
+    gap: 40px;
+  }
+}
+
 section.heroe {
   margin-top: -8rem;
   overflow-x: hidden;
@@ -288,6 +303,68 @@ section.heroe .heroe--container .heroe--text-container a::after {
     position: relative;
   }
 }
+@media (min-width: 1440px) {
+  section.heroe {
+    margin-top: -145px;
+  }
+  section.heroe .heroe--container {
+    margin-inline: 5%;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 80px;
+  }
+  section.heroe .heroe--container::before {
+    content: "";
+    top: 70px;
+    left: -200px;
+    width: 50%;
+  }
+  section.heroe .heroe--container::after {
+    content: "";
+    position: absolute;
+    width: 129px;
+    height: 129px;
+    right: 650px;
+    bottom: 60px;
+  }
+  section.heroe .heroe--container .heroe--text-container {
+    gap: 20px;
+    flex: 1;
+    margin-left: 50px;
+    width: 100%;
+  }
+  section.heroe .heroe--container .heroe--text-container .line--jump {
+    display: none;
+  }
+  section.heroe .heroe--container .heroe--text-container h2 {
+    position: absolute;
+    top: 30%;
+    left: 3%;
+    font-size: 8.5rem;
+    line-height: 8.5rem;
+    z-index: 10;
+    max-width: 50%;
+  }
+  section.heroe .heroe--container .heroe--text-container p {
+    top: 65%;
+    left: 3%;
+    font-size: 2rem;
+    max-width: 32%;
+  }
+  section.heroe .heroe--container .heroe--text-container a {
+    top: 85%;
+    left: 3%;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  section.heroe .heroe--container .heroe--avatar-container {
+    flex: 1;
+    position: relative;
+    left: -50px;
+    width: 100%;
+  }
+}
+
 section.projects {
   margin-top: 80px;
   margin-bottom: 80px;

@@ -38,7 +38,17 @@ header{
 
   /* Desktop (≥1440px) */
   @include mx.desktop {
-    
+    .header--container{
+        margin-inline: 8%;
+        width: 100%;        
+        .header--svg-container{
+            position: relative;
+            right: 100px;
+            justify-self: flex-end;
+            gap: 40px;
+        }
+
+    }
   }    
 
 }

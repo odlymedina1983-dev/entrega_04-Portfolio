@@ -168,6 +168,64 @@ section.heroe{
 
   /* Desktop (≥1440px) */
   @include mx.desktop {
+    margin-top: -145px;
+    .heroe--container{ 
+        margin-inline: 5%;        
+        justify-content: flex-end;
+        width: 100%;
+        gap: 80px;       
+        &::before{
+            content: "";             
+            top: 70px;
+            left: -200px;
+            width: 50%;            
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 129px;          
+            height: 129px;
+            right: 650px;          
+            bottom: 60px;
+            
+        }
+        .heroe--text-container{ 
+            .line--jump{
+                display: none;
+            }           
+            gap: 20px;
+            flex: 1;
+            margin-left: 50px;
+            width: 100%;
+            h2{
+                position: absolute;
+                top: 30%;
+                left: 3%;                
+                font-size: 8.5rem;
+                line-height: 8.5rem;
+                z-index: 10;
+                max-width: 50%;               
+            }
+            p{                              
+                top: 65%;
+                left: 3%;
+                font-size: 2rem;                
+                max-width: 32%;
+            } 
+            a{
+                top: 85%;
+                left: 3%; 
+                font-size: 2rem; 
+                font-weight: 400;                             
+            }
+        }
+        .heroe--avatar-container{
+            flex: 1; 
+            position: relative;
+            left: -50px; 
+            width: 100%;                                            
+        }
+    }
     
   }
 }
