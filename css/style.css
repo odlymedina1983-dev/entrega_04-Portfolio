@@ -29,6 +29,22 @@ body {
   background-color: #151515;
 }
 
+.container {
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 16px;
+}
+@media (min-width: 768px) {
+  .container {
+    padding-inline: 0;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    padding-inline: 0;
+  }
+}
+
 /* ================================
    Base Typography
    ================================ */
@@ -71,6 +87,10 @@ h3 {
 }
 
 /*  LAYOUT  estructura general del sitio*/
+header {
+  /* Tablet (≥768px) */
+  /* Desktop (≥1440px) */
+}
 header .header--container {
   display: flex;
   flex-direction: column;
@@ -81,11 +101,29 @@ header .header--container {
 }
 header .header--container .header--svg-container {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 20px;
 }
-
-/* Tablet (≥768px) */
-/* Desktop (≥1440px) */
+@media (min-width: 768px) {
+  header {
+    position: relative;
+    z-index: 10;
+  }
+  header .header--container {
+    position: relative;
+    z-index: 0;
+    flex-direction: row;
+    margin-left: 50px;
+  }
+  header .header--container .header--logo {
+    flex: 2;
+  }
+  header .header--container .header--svg-container {
+    flex: 1;
+    justify-content: flex-start;
+  }
+}
 section.heroe {
   margin-top: -8rem;
   overflow-x: hidden;
@@ -99,8 +137,6 @@ section.heroe .heroe--container {
   align-items: center;
   justify-content: center;
   gap: 40px;
-  margin-left: 3%;
-  margin-right: 3%;
 }
 section.heroe .heroe--container::before {
   content: "";
@@ -120,7 +156,7 @@ section.heroe .heroe--container::after {
   position: absolute;
   width: 129px;
   height: 129px;
-  right: -80px;
+  right: -50px;
   bottom: 268px;
   background-image: url("../../img/icon/Oval-heroe.svg");
   background-repeat: no-repeat;
@@ -156,6 +192,7 @@ section.heroe .heroe--container .heroe--text-container h2 span::after {
 }
 section.heroe .heroe--container .heroe--text-container a {
   position: relative;
+  text-transform: uppercase;
 }
 section.heroe .heroe--container .heroe--text-container a::after {
   content: "";
@@ -163,10 +200,93 @@ section.heroe .heroe--container .heroe--text-container a::after {
   left: 0;
   bottom: -8px;
   width: 100%;
-  height: 4px;
+  height: px;
   background-color: #4EE1A0;
   border-radius: 5px;
-  padding-bottom: 5px;
+  padding-bottom: 3px;
+}
+@media (min-width: 768px) {
+  section.heroe {
+    margin-top: -50px;
+  }
+  section.heroe .heroe--container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 80px;
+  }
+  section.heroe .heroe--container::before {
+    content: "";
+    top: 20px;
+    left: -520px;
+    width: 100%;
+  }
+  section.heroe .heroe--container::after {
+    content: "";
+    position: absolute;
+    width: 129px;
+    height: 129px;
+    right: -40px;
+    bottom: -5px;
+  }
+  section.heroe .heroe--container .heroe--text-container {
+    justify-content: flex-start;
+    text-align: left;
+    gap: 20px;
+    flex: 1;
+    margin-left: 50px;
+    width: 100%;
+  }
+  section.heroe .heroe--container .heroe--text-container h2 {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    align-self: left;
+    font-size: 7rem;
+    line-height: 8rem;
+    z-index: 10;
+    max-width: 60%;
+  }
+  section.heroe .heroe--container .heroe--text-container h2 span {
+    position: relative;
+  }
+  section.heroe .heroe--container .heroe--text-container h2 span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 4px;
+    background-color: #4EE1A0;
+    border-radius: 5px;
+  }
+  section.heroe .heroe--container .heroe--text-container p {
+    position: absolute;
+    top: 75%;
+    left: 5%;
+    font-size: 2rem;
+    font-weight: 400;
+    z-index: 10;
+    max-width: 60%;
+  }
+  section.heroe .heroe--container .heroe--text-container a {
+    position: absolute;
+    top: 95%;
+    left: 5%;
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+  section.heroe .heroe--container .heroe--text-container a::after {
+    bottom: -10px;
+    height: 4px;
+  }
+  section.heroe .heroe--container .heroe--avatar-container {
+    flex: 1;
+    position: relative;
+  }
 }
 section.projects {
   margin-top: 80px;
@@ -182,10 +302,11 @@ section.projects .projects--container {
   justify-content: center;
 }
 section.projects .projects--container .projects--header {
-  width: 90%;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto;
   align-items: center;
-  justify-content: space-between;
+  -moz-column-gap: 70px;
+       column-gap: 70px;
 }
 section.projects .projects--container .projects--header h2 {
   font-size: 4rem;
@@ -277,10 +398,9 @@ section.skills .skills--limit {
   width: 90%;
   height: 1px;
   align-self: center;
-  margin: 0 auto;
   margin-bottom: 50px;
   margin-top: 70px;
-  opacity: 50%;
+  opacity: 0.5;
 }
 section.skills .skills--container {
   position: relative;
@@ -310,6 +430,44 @@ section.skills .skills--container .skills--unit {
   align-items: center;
   justify-content: center;
 }
+@media (min-width: 768px) {
+  section.skills .skills--container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    justify-content: stretch;
+    align-items: start;
+    margin-left: 50px;
+    max-width: 80%;
+  }
+  section.skills .skills--container::before {
+    content: "";
+    position: absolute;
+    top: 200px;
+    left: 500px;
+    width: 80%;
+    aspect-ratio: 400/129;
+    background-image: url("../../img/icon/oval-pattern.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    pointer-events: none;
+    z-index: -100;
+  }
+  section.skills .skills--container .skills--unit {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  section.skills .skills--container .skills--unit h3 {
+    font-size: 4rem;
+  }
+  section.skills hr.skills--limit.limit--bottom {
+    display: none !important;
+  }
+}
 footer {
   background-color: #242424;
   margin-top: 0;
@@ -329,7 +487,6 @@ footer .footer--container .footer--svg-container {
   gap: 20px;
 }
 section.contact {
-  margin: 0 auto;
   background-color: #242424;
   padding-bottom: 10px;
   overflow: hidden;

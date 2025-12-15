@@ -1,21 +1,19 @@
 @use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mx;
 
 body {
   background-color: var.$black; 
 }
-.container{
-  width: 100%;
-  margin-inline: auto;     // centra cuando haya max-width
-  padding-inline: 16px;    
+.container {
+  width: 100%;  
+  margin-inline: auto;
+  padding-inline: 16px; // mobile
 
-  @include mx.tablet{
-    max-width: 768px;      
-    padding-inline: 32px;
+  @include mx.tablet {
+    padding-inline: 0;
   }
 
-  @include mx.desktop{
-    max-width: 14400px;     
-    padding-inline: 0;     
+  @include mx.desktop {
+    padding-inline: 0;
   }
-
 }

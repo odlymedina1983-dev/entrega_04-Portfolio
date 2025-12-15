@@ -11,17 +11,35 @@ header{
         margin-top: 20px;
         .header--svg-container{
             display: flex;
+            align-items: center;
+            justify-content: center;
             gap: 20px;
-        }
+        }          
     }
-}
 
   /* Tablet (≥768px) */
   @include mx.tablet {
-    
+    position: relative;
+    z-index: 10;    
+    .header--container{        
+        position: relative;
+        z-index: 0;
+        flex-direction: row;
+        margin-left: 50px;
+        .header--logo{
+            flex: 2;
+        }
+        .header--svg-container{
+            flex: 1;
+            justify-content: flex-start;
+        }        
+    }
   }
 
   /* Desktop (≥1440px) */
   @include mx.desktop {
     
-  }
+  }    
+
+}
+
