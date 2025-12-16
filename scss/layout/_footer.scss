@@ -32,7 +32,11 @@ footer{
 
   /* Desktop (≥1440px) */
   @include mx.desktop {
-    
+    padding-bottom: 10px;
+    padding-top: 5px;
+    .footer--container{
+        margin-left: 8%;
+    }
   }
 
 

@@ -480,7 +480,44 @@ section.projects .projects--container article.projects--card .skills--a-containe
     width: 90%;
   }
 }
+@media (min-width: 1440px) {
+  section.projects .projects--container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    justify-content: stretch;
+    margin: 8%;
+  }
+  section.projects .projects--container .projects--header {
+    width: 78%;
+  }
+  section.projects .projects--container article.projects--card {
+    position: relative;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  section.projects .projects--container article.projects--card:focus-within .projects--img img {
+    opacity: 0.3;
+  }
+  section.projects .projects--container article.projects--card:focus-within .skills--a-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    bottom: 250px;
+    left: 200px;
+  }
+  section.projects .projects--container article.projects--card:focus-within .skills--a-container a:hover {
+    color: #4EE1A0;
+  }
+}
+
 section.skills {
+  overflow-x: hidden;
   /* Tablet (≥768px) */
   /* Desktop (≥1440px) */
 }
@@ -538,11 +575,6 @@ section.skills .skills--container .skills--unit {
     left: 500px;
     width: 80%;
     aspect-ratio: 400/129;
-    background-image: url("../../img/icon/oval-pattern.svg");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    pointer-events: none;
-    z-index: -100;
   }
   section.skills .skills--container .skills--unit {
     display: flex;
@@ -558,6 +590,38 @@ section.skills .skills--container .skills--unit {
     display: none !important;
   }
 }
+@media (min-width: 1440px) {
+  section.skills {
+    margin-bottom: 200px;
+  }
+  section.skills .skills--container {
+    padding-left: 5%;
+    grid-template-columns: 1fr 1fr 1fr;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    justify-content: stretch;
+    align-items: start;
+    max-width: 80%;
+  }
+  section.skills .skills--container::before {
+    content: "";
+    position: absolute;
+    top: 80px;
+    left: 1000px;
+    width: 50%;
+  }
+  section.skills .skills--container .skills--unit {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  section.skills .skills--container .skills--unit h3 {
+    font-size: 4rem;
+  }
+}
+
 footer {
   background-color: #242424;
   margin-top: 0;
@@ -589,6 +653,16 @@ footer .footer--container .footer--svg-container {
     width: 90%;
   }
 }
+@media (min-width: 1440px) {
+  footer {
+    padding-bottom: 10px;
+    padding-top: 5px;
+  }
+  footer .footer--container {
+    margin-left: 8%;
+  }
+}
+
 section.contact {
   background-color: #242424;
   padding-bottom: 10px;
@@ -788,6 +862,52 @@ section.contact .contact--container .contact--form-container .contact--form text
     margin-top: 120px;
   }
 }
+@media (min-width: 1440px) {
+  section.contact {
+    padding-bottom: 5px;
+  }
+  section.contact .contact--container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    z-index: 0;
+  }
+  section.contact .contact--container::before {
+    content: "";
+    position: absolute;
+    top: 200px;
+    left: -400px;
+    width: 50%;
+    height: 140%;
+    aspect-ratio: 500/200;
+  }
+  section.contact .contact--container .contact--header {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  section.contact .contact--container .contact--header h3 {
+    text-align: start;
+    font-size: 8rem;
+    margin-left: 20px;
+    margin-top: 0;
+  }
+  section.contact .contact--container .contact--header p {
+    text-align: start;
+  }
+  section.contact .contact--limit {
+    align-self: center;
+    width: 90% !important;
+    height: 1px;
+    margin: 0;
+    margin-top: 70px;
+    opacity: 50%;
+    margin-bottom: 0px;
+    margin-left: 8%;
+  }
+}
+
 /*    COMPONENTS botones tarjetas etc*/
 /*    PAGES   estilos especificos para cada pagina*/
 /*   THEMES    */

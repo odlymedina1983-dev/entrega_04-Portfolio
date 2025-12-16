@@ -185,7 +185,47 @@ section.contact{
 
   /* Desktop (≥1440px) */
   @include mx.desktop {
-    
+    padding-bottom: 5px;
+    .contact--container{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items:flex-start;
+        justify-content:flex-start;
+        z-index: 0;
+        &::before{
+            content: "";
+            position: absolute; 
+            top: 200px;
+            left: -400px;
+            width: 50%;
+            height: 140%;
+            aspect-ratio: 500 / 200;            
+        }
+        .contact--header{
+            align-items: flex-start;
+            justify-content: flex-start;
+            h3{
+                text-align: start;
+                font-size: 8rem;
+                margin-left: 20px;
+                margin-top: 0;
+            }
+            p{
+                text-align: start;
+            }
+        }  
+    }
+    .contact--limit{
+            align-self: center;
+            width: 90% !important;
+            height: 1px;           
+            margin: 0;
+            margin-top: 70px;
+            opacity: 50%; 
+            margin-bottom: 0px; 
+            margin-left: 8%;                 
+    }
   }
     
 }

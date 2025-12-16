@@ -1,7 +1,8 @@
 @use "../abstracts/mixins" as mx;
 @use "../abstracts/variables" as var;
 
-section.skills{       
+section.skills{ 
+    overflow-x: hidden;      
     .skills--limit{
         width: 90%;
         height: 1px;
@@ -56,11 +57,6 @@ section.skills{
             left: 500px;
             width: 80%;
             aspect-ratio: 400 / 129;                     
-            background-image: url("../../img/icon/oval-pattern.svg");
-            background-repeat: no-repeat;
-            background-size: 100% auto;
-            pointer-events: none;
-            z-index: -100;
         }
         .skills--unit{
             display: flex;
@@ -78,7 +74,33 @@ section.skills{
     }
     /* Desktop (≥1440px) */
     @include mx.desktop {
-        
+        margin-bottom: 200px;
+        .skills--container{
+            padding-left: 5%;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 20px;
+            justify-content: stretch;
+            align-items: start;            
+            max-width: 80%;
+            &::before{
+                content: "";
+                position: absolute; 
+                top: 80px;
+                left: 1000px;
+                width: 50%;                       
+            }
+            .skills--unit{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                align-items: flex-start;
+                justify-content: center;
+                h3{
+                    font-size: 4rem;
+                }
+            }
+            
+        }
     }
 }
 

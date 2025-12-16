@@ -122,7 +122,42 @@ section.projects{
 
   /* Desktop (≥1440px) */
   @include mx.desktop {
-    
+    .projects--container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 40px;
+        align-items: center;
+        justify-content: stretch;        
+        margin: 8%;
+        .projects--header{
+            width: 78%;
+        }
+        article.projects--card{
+            position: relative;
+            outline: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            &:focus-within{
+                .projects--img img{
+                    opacity: 0.3;
+                }
+                .skills--a-container{
+                    position: absolute;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 50px; 
+                    bottom: 250px;   
+                    left: 200px;
+                    a:hover{
+                        color: var.$green;
+                    }                    
+                                    
+                } 
+            }
+        }   
+    }
   }
 
 }
