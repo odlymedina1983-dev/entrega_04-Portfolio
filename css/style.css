@@ -160,7 +160,7 @@ section.heroe .heroe--container::before {
   left: -520px;
   width: 200%;
   aspect-ratio: 400/129;
-  background-image: url("../../img/icon/oval-pattern.svg");
+  background-image: url("../img/icon/oval-pattern.svg");
   background-repeat: no-repeat;
   background-size: 100% auto;
   pointer-events: none;
@@ -173,7 +173,7 @@ section.heroe .heroe--container::after {
   height: 129px;
   right: -50px;
   bottom: 268px;
-  background-image: url("../../img/icon/Oval-heroe.svg");
+  background-image: url("../img/icon/Oval-heroe.svg");
   background-repeat: no-repeat;
   background-size: contain;
   pointer-events: none;
@@ -544,7 +544,7 @@ section.skills .skills--container::before {
   left: 200px;
   width: 200%;
   aspect-ratio: 400/129;
-  background-image: url("../../img/icon/oval-pattern.svg");
+  background-image: url("../img/icon/oval-pattern.svg");
   background-repeat: no-repeat;
   background-size: 100% auto;
   pointer-events: none;
@@ -695,7 +695,7 @@ section.contact .contact--container::before {
   width: 110%;
   height: 140%;
   aspect-ratio: 500/200;
-  background-image: url("../../img/icon/oval-pattern.svg");
+  background-image: url("../img/icon/oval-pattern.svg");
   background-repeat: no-repeat;
   background-size: 100% auto;
   pointer-events: none;
@@ -851,11 +851,6 @@ section.contact .contact--container .contact--form-container .contact--form text
     width: 110%;
     height: 140%;
     aspect-ratio: 500/200;
-    background-image: url("../../img/icon/oval-pattern.svg");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    pointer-events: none;
-    z-index: -1;
   }
   section.contact .contact--limit {
     margin-bottom: 30px;
